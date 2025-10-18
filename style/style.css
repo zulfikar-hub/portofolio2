@@ -1,23 +1,66 @@
-/* Menggunakan font Inter secara global */
-@import url('https://www.google.com/search?q=https://fonts.googleapis.com/css2%3Ffamily%3DInter:wght%40100..900%26display%3Dswap');
+/* =========================================
+   Import font Inter secara global
+========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 body {
-font-family: 'Inter', sans-serif;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Style untuk memberikan efek bayangan ringan pada scroll */
+/* =========================================
+   Navbar link (desktop)
+========================================= */
+.nav-link {
+  color: #374151; /* Tailwind text-secondary-dark */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #3b82f6; /* Tailwind text-primary-accent */
+}
+
+/* =========================================
+   Mobile menu link
+========================================= */
+.mobile-link {
+  display: block;
+  padding: 0.75rem 1.5rem; /* px-6 py-3 */
+  font-size: 1rem; /* text-base */
+  font-weight: 500;
+  color: #374151; /* text-secondary-dark */
+  transition: all 0.2s;
+  border-radius: 0.5rem; /* rounded */
+}
+
+.mobile-link:hover {
+  background-color: #3b82f6; /* bg-primary-accent */
+  color: #ffffff;
+}
+
+/* =========================================
+   Efek bayangan saat scroll
+========================================= */
 .scrolled-shadow {
-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+  /* Fallback box-shadow jika @apply tidak dipakai */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+              0 2px 4px -2px rgba(0, 0, 0, 0.06);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
-/* Placeholder untuk simulasi gambar lokal (agar desain tetap utuh) */
+/* =========================================
+   Placeholder untuk simulasi gambar
+========================================= */
 .placeholder-img {
-display: flex;
-align-items: center;
-justify-content: center;
-background-color: #e5e7eb;
-color: #4b5563;
-font-size: 1.25rem;
-font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e7eb; /* Tailwind gray-200 */
+  color: #4b5563; /* Tailwind gray-700 */
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 0.75rem; /* rounded-xl */
 }

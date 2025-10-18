@@ -28,54 +28,63 @@
 </head>
 <body class="bg-gray-50 text-secondary-dark antialiased">
     
-    <!-- Navbar (Header) -->
-    <header id="navbar" class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm transition-all duration-300">
-        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <!-- Logo (Simulasi img/logo.png) -->
-            <a href="#hero" class="text-2xl font-extrabold text-primary-accent hover:text-blue-700 transition duration-300">
-                Electro<span class="text-secondary-dark">Shop</span>
-            </a>
-            
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex space-x-8">
-                <a href="#hero" class="text-sm font-medium text-secondary-dark hover:text-primary-accent transition duration-300">Beranda</a>
-                <a href="#produk" class="text-sm font-medium text-secondary-dark hover:text-primary-accent transition duration-300">Produk Unggulan</a>
-                <a href="#tentang" class="text-sm font-medium text-secondary-dark hover:text-primary-accent transition duration-300">Tentang Kami</a>
-                <a href="#kontak" class="text-sm font-medium text-secondary-dark hover:text-primary-accent transition duration-300">Kontak</a>
-            </div>
+    <!-- ✅ Navbar (Header) -->
+<header id="navbar" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
+  <nav class="container mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    
+    <!-- ✅ Logo -->
+    <a href="#hero" class="text-2xl font-extrabold text-primary-accent hover:text-blue-700 transition duration-300">
+      Electro<span class="text-secondary-dark">Shop</span>
+    </a>
 
-            <!-- Tombol CTA Nav -->
-            <a href="https://wa.me/6281234567890" target="_blank" class="hidden md:inline-flex items-center bg-cta-green text-white py-1.5 px-4 rounded-full text-sm font-semibold shadow-lg hover:bg-emerald-600 transition duration-300 transform hover:scale-105">
-                Pesan Cepat
-            </a>
+    <!-- ✅ Desktop Menu -->
+    <div class="hidden md:flex space-x-8">
+      <a href="#hero" class="nav-link">Beranda</a>
+      <a href="#produk" class="nav-link">Produk Unggulan</a>
+      <a href="#tentang" class="nav-link">Tentang Kami</a>
+      <a href="#kontak" class="nav-link">Kontak</a>
+    </div>
 
-            <!-- Tombol Mobile Menu -->
-            <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg text-secondary-dark hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-accent" aria-label="Toggle menu">
-                <!-- Ikon Hamburger (open state) -->
-                <svg id="icon-open" class="w-6 h-6 block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-                <!-- Ikon Close (close state - hidden by default) -->
-                <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </button>
-        </nav>
+    <!-- ✅ CTA Button (Desktop) -->
+    <a href="https://wa.me/6281234567890" target="_blank"
+      class="hidden md:inline-flex items-center bg-emerald-500 text-white py-1.5 px-4 rounded-full text-sm font-semibold shadow-md hover:bg-emerald-600 transition duration-300 transform hover:scale-105">
+      Pesan Cepat
+    </a>
 
-        <!-- Mobile Menu (Tersembunyi) -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-xl py-3 border-t border-gray-100">
-            <a href="#hero" class="block px-6 py-3 text-base font-medium text-secondary-dark hover:bg-primary-accent hover:text-white transition duration-200">Beranda</a>
-            <a href="#produk" class="block px-6 py-3 text-base font-medium text-secondary-dark hover:bg-primary-accent hover:text-white transition duration-200">Produk Unggulan</a>
-            <a href="#tentang" class="block px-6 py-3 text-base font-medium text-secondary-dark hover:bg-primary-accent hover:text-white transition duration-200">Tentang Kami</a>
-            <a href="#kontak" class="block px-6 py-3 text-base font-medium text-secondary-dark hover:bg-primary-accent hover:text-white transition duration-200">Kontak</a>
-            <!-- CTA di mobile menu -->
-            <div class="px-6 py-3 border-t mt-2">
-                <a href="#produk" class="w-full text-center inline-block bg-primary-accent text-white py-2.5 rounded-xl text-base font-semibold hover:bg-blue-700 transition duration-300">
-                    Lihat Katalog Lengkap
-                </a>
-            </div>
-        </div>
-    </header>
+    <!-- ✅ Tombol Mobile Menu -->
+    <button id="mobile-menu-button"
+      class="md:hidden p-2 rounded-lg text-secondary-dark hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-accent transition"
+      aria-label="Toggle menu">
+      <!-- Ikon Hamburger -->
+      <svg id="icon-open" class="w-6 h-6 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <!-- Ikon Close -->
+      <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ✅ Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-3 border-t border-gray-200 transition-all duration-300">
+    <a href="#hero" class="mobile-link">Beranda</a>
+    <a href="#produk" class="mobile-link">Produk Unggulan</a>
+    <a href="#tentang" class="mobile-link">Tentang Kami</a>
+    <a href="#kontak" class="mobile-link">Kontak</a>
+    
+    <!-- CTA di mobile -->
+    <div class="px-6 py-3 border-t mt-2">
+      <a href="#produk"
+        class="w-full text-center inline-block bg-primary-accent text-white py-2.5 rounded-xl text-base font-semibold hover:bg-blue-700 transition duration-300">
+        Lihat Katalog Lengkap
+      </a>
+    </div>
+  </div>
+</header>
+
 
     <!-- 1. Hero Section -->
     <section id="hero" class="bg-gray-100/70 py-20 md:py-32 overflow-hidden">
@@ -244,6 +253,6 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
-
+    <script src="js/navbar.js"></script>
 </body>
 </html>

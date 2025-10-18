@@ -1,0 +1,31 @@
+{
+  "name": "toko-elektronik-api",
+  "version": "1.0.0",
+  "description": "REST API untuk toko elektronik menggunakan Node.js, Express.js, dan MySQL",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.19.2",
+    "mysql2": "^3.9.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zulfikar-hub/portofolio2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zulfikar-hub/portofolio2/issues"
+  },
+  "homepage": "https://github.com/zulfikar-hub/portofolio2#readme"
+}
